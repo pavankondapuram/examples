@@ -1,4 +1,4 @@
-var dojoConfig= {
+/*var dojoConfig= {
 	baseUrl: "/js/",
 	tlmSiblingOfDojo: false,
 	packages: [
@@ -44,4 +44,7 @@ require(['tui/calendar'], function(myModule){
 	setTimeout(function(){
 		myModule.restoreText('greeting');
 	}, 3000);
-});
+});*/
+
+dojo.require("dojo.parser" );
+dojo.require("dijit.layout.ContentPane" );

@@ -3,9 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Tutorial: Hello Dojo!</title>
+	<style type="text/css" >
+		@import "js/dojo/dijit/themes/tundra/tundra.css";
+		@import "js/dojo/dojo/resources/dojo.css";
+	</style>
+	<script type="text/javascript" src="js/dojo/dojo/dojo.js" djConfig="parseOnLoad: true" ></script>
+	<script type="text/javascript" src="js/try.js"></script>
 </head>
-<body>
-	<h1 id='greeting'>Hello</h1>
-    <script data-dojo-config="async:true" src="js/lib/dojo/dojo.js"></script>
-    <script src="js/try.js"></script>
+<body class="tundra">
+	<div dojoType="dijit.layout.ContentPane" href="http://www.yahoo.com" ></div>
 </body>
