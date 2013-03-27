@@ -13,7 +13,7 @@
 
 		<ul class='list-unstyled'>
 			<li ng-repeat="todo in todos">
-				<input type="checkbox" ng-model="done.true">
+				<input type="checkbox" ng-model="todo.done">
 				<span class="done-{{todo.done}}">{{todo.text}}</span>
 			</li>
 		</ul>
