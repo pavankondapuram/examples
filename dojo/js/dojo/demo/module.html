@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial: Hello Dojo!</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var dojoConfig={
+            async:true,
+            packages:[{
+                name:"demo",
+                location:location.pathname.replace(/\/[^/]*$/, '')
+            }]
+        };
+    </script>
+    <h1 id="greeting">Hello</h1>
+    <!-- load Dojo -->
+    <script src="../dojo/dojo.js" data-dojo-config="async: true"></script>
+    <script src="setText.js" type="text/javascript"></script>
+</body>
+</html>
