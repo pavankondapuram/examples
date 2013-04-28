@@ -1,7 +1,8 @@
-require(["demo/myModule"],function(textSet){
-    textSet.setText("greeting","hello dojo");
-    
-    setTimeout(function() {
-        textSet.restoreText("greeting");
-    }, 3000);
-})
+require(["demo/myModule"],function(myModule){
+   myModule.setText("greeting","<span style='font-size:180px;'>TEST</span>");
+   
+   setTimeout(function() {
+       var oldText='greeting';
+       myModule.restoreText(oldText);
+   }, 3000);
+});
