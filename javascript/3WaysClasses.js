@@ -8,4 +8,3 @@ function apple(type){
 function appleInfo(){
     return this.color + " " + this.type + " " + "is apple";
 }
-
